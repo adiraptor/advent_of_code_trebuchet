@@ -8,7 +8,7 @@ calibration_values = calibration_doc.split("\n")
 
 """Define mapping function to get the first and last digit in a string"""
 def get_first_last_digit(text: str) -> int:
-    #Get all
+    #Get all digits in the input text
     digits = [x for x in text if not x.isalpha()]
     
     first_last_digit = digits[0] + digits[len(digits)-1]
